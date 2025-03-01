@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prime Framework - A Unified Approach to Predictive Primes</title>
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Internal CSS Styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+    }
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 5px;
+    }
+    .chart-container {
+      position: relative;
+      margin: 20px auto;
+      height: 400px;
+      width: 90%;
+    }
+    .interactive-demo form,
+    .interactive-demo input,
+    .interactive-demo button {
+      padding: 10px;
+      font-size: 1em;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .interactive-demo button {
+      background: #2c3e50;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+    .interactive-demo button:hover {
+      background: #34495e;
+    }
+    .trace-step {
+      margin: 5px 0;
+      padding: 8px;
+      background: #ecf0f1;
+      border-left: 3px solid #3498db;
+    }
+    details {
+      margin: 10px 0;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Prime Framework</h1>
+    <p>Discover the Unified Foundation for Predictive Primes and Mathematical Physics</p>
+  </header>
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Welcome to the Prime Framework website! Here you will learn about a revolutionary approach that unifies mathematics and physics through a set of minimal axioms. This framework naturally constructs the prime sequence from first principles—demonstrating that prime numbers emerge intrinsically from the structure of the theory.</p>
+      <p>The system starts at 2 and predicts primes indefinitely while carefully managing memory consumption. Interactive visualizations and detailed computational traces help you explore every step of the prediction.</p>
+    </section>
+
+    <section id="interactive-demo" class="interactive-demo">
+      <h2>Interactive Prime Checker</h2>
+      <p>Enter a number below to see a step-by-step trace of the prime testing algorithm based on the Prime Framework. The system continuously computes primes without an upper limit, allowing you to explore the process indefinitely:</p>
+      <form id="primeForm">
+        <input type="number" id="primeInput" name="primeInput" placeholder="Enter a number" min="2">
+        <button type="button" id="checkButton">Check Prime</button>
+      </form>
+      <p id="interactiveResult"></p>
+      <div id="traceOutput"></div>
+    </section>
+
+    <section id="charts">
+      <h2>Prime Visualizations</h2>
+      <div class="chart-container">
+        <canvas id="primesChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="gapsChart"></canvas>
+      </div>
+    </section>
+
+    <section id="explanation">
+      <h2>Comprehensive Walkthrough</h2>
+      <p>The Prime Framework is a unified system constructed from a small set of foundational axioms. By introducing a smooth reference manifold, locally-attached Clifford algebra fibers, a symmetry group, and a coherence inner product, the framework interlaces elements of geometry, algebra, and number theory into one cohesive structure.</p>
+      <p>At its core, the framework demonstrates that prime numbers emerge naturally from the consistency requirements of multi-base representations. Natural numbers are encoded by capturing all their possible base expansions and enforcing agreement via a coherence norm minimization process. This yields a unique, canonical representation from which the classical properties of prime numbers — including their distribution as expressed by the Prime Number Theorem — follow as intrinsic features of the system.</p>
+      <p>The framework also connects to our understanding of the cosmos. The reference manifold can be interpreted as an abstract model of spacetime, while the symmetry group mirrors the invariances observed in physical laws. Through these links, the Prime Framework offers insights into how discrete mathematical structures might underpin continuous phenomena in nature, suggesting a deep unity between the arithmetic of primes and the fundamental fabric of the universe.</p>
+      <p>In practical terms, the Prime Framework informs real-world interests in fields such as cryptography, where prime numbers play a critical role in securing digital communications, and in theoretical physics, where the interplay between geometry and algebra underlies many modern theories. Its computational tools and interactive visualizations enable researchers and enthusiasts alike to experiment with these concepts, making abstract ideas accessible and demonstrable.</p>
+      <p>This demonstration dynamically updates as the system computes primes indefinitely. Graphical visualizations include prime charts that display both the index and the prime value, histograms of prime gaps, and polynomial coefficient diagrams derived from congruence tests. These elements work together to provide a clear, accessible exploration of the underlying principles of the Prime Framework.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Prime Framework Initiative. All Rights Reserved.</p>
+  </footer>
+  
+  <!-- Call to the forthcoming index.js -->
+  <script src="index.js"></script>
+</body>
+</html>
